@@ -6,19 +6,14 @@
     <title>Form Example</title>
 </head>
 <body>
-   <form id="form1">
+   <form id="form1" onsubmit ="getFormvalue(); return false;">
     First Name: <input type="text" id="fname" name="fname"><br>
     Last Name: <input type="text" id="lname" name="lname"><br>
-    <input type="button" value="Submit" onclick="getFormvalue()">
+    <input type="button" value="Submit">
 </form>
 
     <script src="script.js">
-		function getFormvalue(event) {
-    event.preventDefault();
-    const firstName = document.getElementById('fname').value;
-    const lastName = document.getElementById('lname').value;
-    alert(firstName + ' ' + lastName);
-}
+		
 	</script>
 </body>
 </html>
